@@ -1,5 +1,4 @@
 # projekt_java_wzorzec_strategia
 
-Projekt w którym trzeba zastosować wzorzec Strategia.<br>
-Jest bez GUI, zrobiona jest tylko logika.<br>
-W pdfie wyjaśnione zadanie.
+Jest to projekt zaliczeniowy z javy, w którym trzeba zastosować wzorzec Strategia.<br>
+[W pdfie wyjaśnione zadanie.](POJ-breakthrough.pdf)
