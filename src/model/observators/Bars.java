@@ -1,9 +1,9 @@
 package model.observators;
 
+import model.AlarmListener;
 import model.EnteredPinEvent;
-import model.Listener;
 
-public class Bars extends Listener {
+public class Bars implements AlarmListener {
     @Override
     public void alarmTurnedOn(EnteredPinEvent event) {
         System.out.println("Grrrraach!");

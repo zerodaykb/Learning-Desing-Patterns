@@ -1,9 +1,9 @@
 package model.observators;
 
+import model.AlarmListener;
 import model.EnteredPinEvent;
-import model.Listener;
 
-public class Police extends Listener {
+public class Police implements AlarmListener {
 
     @Override
     public void alarmTurnedOn(EnteredPinEvent event) {
