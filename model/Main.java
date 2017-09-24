@@ -13,9 +13,6 @@ public class Main {
         postac = new Wojownik(postac);
         postac = new Mag(postac);
 
-//        postac.pokazZdolnosci();
-//        postac.pokazUmiejetnosci();
-
         zapiszDoPliku(postac);
     }
 }
