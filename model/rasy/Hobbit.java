@@ -4,7 +4,6 @@ import model.Postac;
 import model.zdolnosci.Niewidzialnosc;
 import model.zdolnosci.Skradanie;
 
-
 public class Hobbit extends Postac {
 
     public Hobbit() {
