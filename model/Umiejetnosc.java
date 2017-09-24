@@ -5,8 +5,6 @@ public abstract class Umiejetnosc {
 
     @Override
     public String toString() {
-        return "Umiejetnosc{" +
-                "umiejetnosc='" + umiejetnosc + '\'' +
-                '}';
+        return "umiejetnosc = " + umiejetnosc;
     }
 }

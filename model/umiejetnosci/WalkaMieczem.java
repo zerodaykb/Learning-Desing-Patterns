@@ -7,6 +7,4 @@ public class WalkaMieczem extends Umiejetnosc {
     public WalkaMieczem() {
         umiejetnosc = "walka mieczem";
     }
-
-
 }

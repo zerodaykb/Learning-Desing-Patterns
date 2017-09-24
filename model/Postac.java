@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Postac {
-
     public List<Zdolnosc> zdolnosci = new ArrayList<>();
     public List<Umiejetnosc> umiejetnosci = new ArrayList<>();
 
@@ -12,16 +11,23 @@ public abstract class Postac {
         umiejetnosci.add(umiejetnosc);
     }
 
-    public void pokazZdolnosci() {
+    public String pobierzZdolnosci() {
+        String tekst = "";
+
         for (Zdolnosc zdolnosc : zdolnosci) {
-            System.out.println(zdolnosc);
+            tekst += zdolnosc + "\n";
         }
+
+        return tekst;
     }
 
-    public void pokazUmiejetnosci() {
+    public String pobierzUmiejetnosci() {
+        String tekst = "";
+
         for (Umiejetnosc umiejetnosc : umiejetnosci) {
-            System.out.println(umiejetnosc);
+            tekst += umiejetnosc + "\n";
         }
-    }
 
+        return tekst;
+    }
 }

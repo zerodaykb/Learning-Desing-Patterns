@@ -7,5 +7,4 @@ public class WalkaToporem extends Umiejetnosc {
     public WalkaToporem() {
         umiejetnosc = "walka toporem";
     }
-
 }
