@@ -3,7 +3,14 @@ package zamowieniaTortow;
 import zamowieniaTortow.skladniki.*;
 import zamowieniaTortow.torty.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import static zamowieniaTortow.Smak.*;
+
 public abstract class Tort {
+    protected Skladniki skladniki;
+    protected Map<String, Integer> ceny = new HashMap<>();
 
     protected String nazwa;
     protected Integer cena;
@@ -28,13 +35,13 @@ public abstract class Tort {
         Tort tort = null;
 
         switch(smak) {
-            case "czekoladowy":
+            case CZEKOLADOWY:
                 tort = new Czekoladowy();
                 break;
-            case "kawowy":
+            case KAWOWY:
                 tort = new Kawowy();
                 break;
-            case "truskawkowy":
+            case TRUSKAWKOWY:
                 tort = new Truskawkowy();
                 break;
         }
@@ -43,7 +50,12 @@ public abstract class Tort {
         return tort;
     }
 
-    protected abstract void przygotuj(String wielkosc, String smak);
+    protected void przygotuj(String wielkosc, String smak) {
+        dodajSkladniki();
+        cena = ceny.get(wielkosc);
+        nazwa = wielkosc + " " + smak;
+    };
+
     protected abstract void dodajSkladniki();
 
     @Override

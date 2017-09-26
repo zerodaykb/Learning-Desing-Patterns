@@ -1,22 +1,16 @@
 package zamowieniaTortow.torty;
 
 import zamowieniaTortow.Tort;
-import zamowieniaTortow.skladniki.Skladniki;
 import zamowieniaTortow.skladniki.rodzajeSkladnikow.KawoweSkladniki;
-
-import java.util.HashMap;
-import java.util.Map;
+import static zamowieniaTortow.Wielkosc.*;
 
 public class Kawowy extends Tort {
-    private Skladniki skladniki;
-    private Map<String, Integer> ceny = new HashMap<>();
-
     public Kawowy() {
         this.skladniki = new KawoweSkladniki();
 
-        ceny.put("maly", 22);
-        ceny.put("sredni", 27);
-        ceny.put("duzy", 32);
+        ceny.put(MALY, 22);
+        ceny.put(SREDNI, 27);
+        ceny.put(DUZY, 32);
     }
 
     @Override
@@ -24,12 +18,5 @@ public class Kawowy extends Tort {
         biszkopt = skladniki.zrobBiszkopt();
         krem = skladniki.zrobKrem();
         glownySkladnik = skladniki.zrobGlownySkladnik();
-    }
-
-    @Override
-    protected void przygotuj(String wielkosc, String smak) {
-        dodajSkladniki();
-        cena = ceny.get(wielkosc);
-        nazwa = wielkosc + " " + smak;
     }
 }
