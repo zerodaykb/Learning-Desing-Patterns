@@ -37,9 +37,6 @@ public abstract class Tort {
             case "truskawkowy":
                 tort = new Truskawkowy();
                 break;
-            case "malinowy":
-                tort = new Malinowy();
-                break;
         }
 
         tort.przygotuj(wielkosc, smak);

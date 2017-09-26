@@ -1,8 +1,5 @@
 package zamowieniaTortow;
 
-import enumy.Smak;
-import enumy.Wielkosc;
-
 import java.util.ArrayList;
 
 public class Zamowienie {

@@ -1,9 +1,6 @@
 package zamowieniaTortow.skladniki.rodzajeSkladnikow;
 
-import zamowieniaTortow.skladniki.Biszkopt;
-import zamowieniaTortow.skladniki.GlownySkladnik;
-import zamowieniaTortow.skladniki.Krem;
-import zamowieniaTortow.skladniki.Skladniki;
+import zamowieniaTortow.skladniki.*;
 import zamowieniaTortow.skladniki.biszkopty.CiemnyBiszkopt;
 import zamowieniaTortow.skladniki.glownySkladnik.PolewaCzekoladowa;
 import zamowieniaTortow.skladniki.kremy.KremCzekoladowy;

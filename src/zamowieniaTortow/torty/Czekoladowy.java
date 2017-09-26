@@ -1,7 +1,5 @@
 package zamowieniaTortow.torty;
 
-import enumy.Smak;
-import enumy.Wielkosc;
 import zamowieniaTortow.Tort;
 import zamowieniaTortow.skladniki.Skladniki;
 import zamowieniaTortow.skladniki.rodzajeSkladnikow.CzekoladoweSkladniki;
@@ -31,6 +29,6 @@ public class Czekoladowy extends Tort {
     protected void przygotuj(String wielkosc, String smak) {
         dodajSkladniki();
         cena = ceny.get(wielkosc);
-        nazwa = wielkosc.toString().toLowerCase() + " " + smak;
+        nazwa = wielkosc + " " + smak;
     }
 }

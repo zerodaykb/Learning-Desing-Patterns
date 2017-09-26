@@ -1,7 +1,5 @@
 package zamowieniaTortow.torty;
 
-import enumy.Smak;
-import enumy.Wielkosc;
 import zamowieniaTortow.Tort;
 import zamowieniaTortow.skladniki.Skladniki;
 import zamowieniaTortow.skladniki.rodzajeSkladnikow.KawoweSkladniki;
