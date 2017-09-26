@@ -1,25 +1,20 @@
 package zamowieniaTortow;
 
+import enumy.Smak;
+import enumy.Wielkosc;
+
 import java.util.ArrayList;
 
 public class Zamowienie {
     private ArrayList<Tort> torty = new ArrayList<>();
     private String adresDostawy;
 
-    public void dodajTorty(String rodzajTortu, Integer ilosc, String wielkosc) {
+    public void dodajTorty(String smak, Integer ilosc, String wielkosc) {
         for(int i = 0; i < ilosc; i++) {
-            Tort tort;
+            Tort tort = Tort.dodajTort(smak, wielkosc);
 
-            tort = dodajTort(rodzajTortu, wielkosc);
-            tort.dodajSkladniki();
             torty.add(tort);
         }
-    }
-
-    private Tort dodajTort(String rodzajTortu, String wielkosc) {
-        Rodzaj rodzaj = Rodzaj.wybierzRodzaj(rodzajTortu);
-
-        return rodzaj.dodajTort(wielkosc);
     }
 
     public void wyswietlZamowienie() {
