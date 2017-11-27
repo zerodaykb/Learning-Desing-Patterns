@@ -6,17 +6,14 @@ import model.umiejetnosci.WalkaWrecz;
 import model.umiejetnosci.Zatruwanie;
 
 public class Zabojca extends Profesja {
-    Postac postac;
+    private Postac postac;
 
     public Zabojca(Postac postac) {
         super(postac);
         this.postac = postac;
-        dodajUmiejetnosci();
-    }
 
-    @Override
-    public void dodajUmiejetnosci() {
-        postac.dodajUmiejetnosc(new WalkaWrecz());
-        postac.dodajUmiejetnosc(new Zatruwanie());
+        umiejetnosci.add(new WalkaWrecz());
+        umiejetnosci.add(new Zatruwanie());
+        drzewoKlas.add(this.getClass().getSimpleName());
     }
 }

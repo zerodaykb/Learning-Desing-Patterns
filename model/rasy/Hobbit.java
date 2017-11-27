@@ -9,6 +9,6 @@ public class Hobbit extends Postac {
     public Hobbit() {
         zdolnosci.add(new Skradanie());
         zdolnosci.add(new Niewidzialnosc());
+        drzewoKlas.add(this.getClass().getSimpleName());
     }
-
 }

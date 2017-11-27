@@ -6,17 +6,14 @@ import model.umiejetnosci.Uzdrawianie;
 import model.umiejetnosci.Zatruwanie;
 
 public class Mag extends Profesja {
-    Postac postac;
+    private Postac postac;
 
     public Mag(Postac postac) {
         super(postac);
         this.postac = postac;
-        dodajUmiejetnosci();
-    }
 
-    @Override
-    public void dodajUmiejetnosci() {
-        postac.dodajUmiejetnosc(new Uzdrawianie());
-        postac.dodajUmiejetnosc(new Zatruwanie());
+        umiejetnosci.add(new Uzdrawianie());
+        umiejetnosci.add(new Zatruwanie());
+        drzewoKlas.add(this.getClass().getSimpleName());
     }
 }
