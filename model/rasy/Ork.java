@@ -9,6 +9,6 @@ public class Ork extends Postac {
     public Ork() {
         zdolnosci.add(new Wytrzymalosc());
         zdolnosci.add(new Sila());
+        drzewoKlas.add(getClass().getSimpleName());
     }
-
 }

@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-public class Zapis {
-    public static String pobierz(List list) {
+class Zapis {
+    private static String pobierz(List list) {
         return list.toString();
     }
 
@@ -13,9 +13,9 @@ public class Zapis {
 
         try {
             PrintWriter writer = new PrintWriter("postac.txt", "UTF-8");
-            writer.println(pobierz(postac.drzewoKlas));
-            writer.println(pobierz(postac.zdolnosci));
-            writer.println(pobierz(postac.umiejetnosci));
+            writer.println("Drzewo klas: \n" + pobierz(postac.drzewoKlas) + "\n");
+            writer.println("Zdolności: \n" + pobierz(postac.zdolnosci) + "\n");
+            writer.println("Umiejętności: \n" + pobierz(postac.umiejetnosci));
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();

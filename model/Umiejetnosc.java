@@ -5,6 +5,6 @@ public abstract class Umiejetnosc {
 
     @Override
     public String toString() {
-        return "umiejetnosc = " + umiejetnosc;
+        return umiejetnosc;
     }
 }

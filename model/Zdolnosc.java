@@ -5,6 +5,6 @@ public abstract class Zdolnosc {
 
     @Override
     public String toString() {
-        return "zdolnosc = " + zdolnosc;
+        return zdolnosc;
     }
 }
