@@ -12,6 +12,6 @@ public class Zabojca extends Profesja {
 
         umiejetnosci.add(new WalkaWrecz());
         umiejetnosci.add(new Zatruwanie());
-        drzewoKlas.add(this.getClass().getSimpleName());
+        drzewoKlas.add(getClass().getSimpleName());
     }
 }

@@ -12,6 +12,6 @@ public class Wojownik extends Profesja {
 
         umiejetnosci.add(new WalkaMieczem());
         umiejetnosci.add(new WalkaToporem());
-        drzewoKlas.add(this.getClass().getSimpleName());
+        drzewoKlas.add(getClass().getSimpleName());
     }
 }

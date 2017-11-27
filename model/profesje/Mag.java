@@ -12,6 +12,6 @@ public class Mag extends Profesja {
 
         umiejetnosci.add(new Uzdrawianie());
         umiejetnosci.add(new Zatruwanie());
-        drzewoKlas.add(this.getClass().getSimpleName());
+        drzewoKlas.add(getClass().getSimpleName());
     }
 }

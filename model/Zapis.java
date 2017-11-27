@@ -5,10 +5,6 @@ import java.io.PrintWriter;
 import java.util.List;
 
 class Zapis {
-    private static String pobierz(List list) {
-        return list.toString();
-    }
-
     static void zapiszDoPliku(Postac postac) {
 
         try {
@@ -20,5 +16,9 @@ class Zapis {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static String pobierz(List list) {
+        return list.toString();
     }
 }
