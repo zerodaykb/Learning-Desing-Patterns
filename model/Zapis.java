@@ -9,7 +9,8 @@ class Zapis {
 
         try {
             PrintWriter writer = new PrintWriter("postac.txt", "UTF-8");
-            writer.println("Drzewo klas: \n" + pobierz(postac.drzewoKlas) + "\n");
+            writer.println("Rasa: \n" + postac.rasa + "\n");
+            writer.println("Profesje: \n" + pobierz(postac.profesje) + "\n");
             writer.println("Zdolności: \n" + pobierz(postac.zdolnosci) + "\n");
             writer.println("Umiejętności: \n" + pobierz(postac.umiejetnosci));
             writer.close();

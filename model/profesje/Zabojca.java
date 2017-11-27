@@ -7,11 +7,11 @@ import model.umiejetnosci.Zatruwanie;
 
 public class Zabojca extends Profesja {
 
-    public Zabojca(Postac postac) {
+    public Zabojca(Postac postac) throws Exception {
         super(postac);
 
         umiejetnosci.add(new WalkaWrecz());
         umiejetnosci.add(new Zatruwanie());
-        drzewoKlas.add(getClass().getSimpleName());
+        profesje.add(getClass().getSimpleName());
     }
 }

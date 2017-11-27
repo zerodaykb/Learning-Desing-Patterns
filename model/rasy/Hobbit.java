@@ -7,8 +7,9 @@ import model.zdolnosci.Skradanie;
 public class Hobbit extends Postac {
 
     public Hobbit() {
+        rasa = "Hobbit";
         zdolnosci.add(new Skradanie());
         zdolnosci.add(new Niewidzialnosc());
-        drzewoKlas.add(getClass().getSimpleName());
+
     }
 }

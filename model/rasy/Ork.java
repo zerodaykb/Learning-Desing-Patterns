@@ -7,8 +7,8 @@ import model.zdolnosci.Wytrzymalosc;
 public class Ork extends Postac {
 
     public Ork() {
+        rasa = "Ork";
         zdolnosci.add(new Wytrzymalosc());
         zdolnosci.add(new Sila());
-        drzewoKlas.add(getClass().getSimpleName());
     }
 }

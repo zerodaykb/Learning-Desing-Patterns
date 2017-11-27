@@ -7,11 +7,11 @@ import model.umiejetnosci.WalkaToporem;
 
 public class Wojownik extends Profesja {
 
-    public Wojownik(Postac postac) {
+    public Wojownik(Postac postac) throws Exception {
         super(postac);
 
         umiejetnosci.add(new WalkaMieczem());
         umiejetnosci.add(new WalkaToporem());
-        drzewoKlas.add(getClass().getSimpleName());
+        profesje.add(getClass().getSimpleName());
     }
 }

@@ -7,11 +7,11 @@ import model.umiejetnosci.Zatruwanie;
 
 public class Mag extends Profesja {
 
-    public Mag(Postac postac) {
+    public Mag(Postac postac) throws Exception {
         super(postac);
 
         umiejetnosci.add(new Uzdrawianie());
         umiejetnosci.add(new Zatruwanie());
-        drzewoKlas.add(getClass().getSimpleName());
+        profesje.add(getClass().getSimpleName());
     }
 }
